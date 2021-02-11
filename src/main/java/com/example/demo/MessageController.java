@@ -37,6 +37,10 @@ public class MessageController {
 
     @GetMapping(value = "/message/{message}")
     public void saveMessage(@PathVariable String message) {
+        
+        
+        
+        
         repo.save(new Message(message));
     }
 }
